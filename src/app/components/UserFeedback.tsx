@@ -10,7 +10,7 @@ const feedbacks = [
   },
   {
     text: "El ensayo (El Color Púrpura, Persépolis y la Vida de Adèle.) de Ligia Urroz hace un recorrido a través de un análisis de obras realizadas por mujeres que lucharon por proyectar su visión del mundo.",
-    user: "Rolling Stone)",
+    user: "Rolling Stone",
   },
 ];
 
