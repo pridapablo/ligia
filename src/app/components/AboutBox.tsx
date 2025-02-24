@@ -8,8 +8,8 @@ export default function AboutBox() {
           <Image
             src="/women_with_guitar.png"
             alt="Ligia Urroz"
-            layout="fill"
-            objectFit="cover"
+            fill
+            className="object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 p-6 md:p-8 overflow-y-auto mt-4 md:mt-8">
