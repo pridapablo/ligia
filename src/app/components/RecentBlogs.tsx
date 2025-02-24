@@ -30,25 +30,21 @@ export default function RecentBlogs() {
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
           Publicaciones Recientes
         </h2>
-
-        {/* Blog List */}
-        <div className="flex flex-col md:flex-row justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {blogs.map((blog) => (
             <div
               key={blog.id}
-              className="w-[340px] h-auto flex flex-col items-center text-center"
+              className="w-full sm:w-[340px] h-auto flex flex-col items-center text-center"
             >
-              <div className="w-[340px] h-[555px] rounded-lg overflow-hidden">
+              <div className="w-full sm:w-[340px] h-[555px] mx-auto rounded-lg overflow-hidden">
                 <Image
                   src={blog.image || "/HeroImage.png"}
                   alt={blog.title}
-                  width={260}
-                  height={260}
+                  width={340}
+                  height={555}
                   className="w-full h-full object-cover"
                 />
               </div>
-
-              {/* Blog Title and Description */}
               <div className="mt-4">
                 <h3 className="text-lg font-semibold mb-1">{blog.title}</h3>
                 <p className="text-gray-600 text-sm">{blog.description}</p>

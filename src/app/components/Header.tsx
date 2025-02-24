@@ -10,22 +10,19 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-black text-white p-4 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-xl font-bold">Ligia Urroz</div>
+        <Link href="/" className="text-xl font-bold hover:text-gray-300">
+          Ligia Urroz
+        </Link>{" "}
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
             <li>
-              <Link href="/" className="hover:text-gray-300">
+              <Link href="#" className="hover:text-gray-300">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-gray-300">
+              <Link href="#" className="hover:text-gray-300">
                 About
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-gray-300">
-                Contact
               </Link>
             </li>
           </ul>

@@ -11,36 +11,32 @@ export default function Footer() {
             <p className="text-white text-sm mb-6">
               Reading promoter and author.
             </p>
-
-            {/* Social Media Icons */}
             <div className="flex gap-4 mb-4">
               <Link href="https://facebook.com" target="_blank">
                 <Facebook
                   size={40}
-                  className="text-black bg-white rounded-full p-1"
+                  className="text-black bg-white rounded-full p-2"
                 />
               </Link>
               <Link href="https://twitter.com" target="_blank">
                 <Twitter
                   size={40}
-                  className="text-black bg-white rounded-full p-1"
+                  className="text-black bg-white rounded-full p-2"
                 />
               </Link>
               <Link href="https://instagram.com" target="_blank">
                 <Instagram
                   size={40}
-                  className="text-black bg-white rounded-full p-1"
+                  className="text-black bg-white rounded-full p-2"
                 />
               </Link>
               <Link href="https://linkedin.com" target="_blank">
                 <Linkedin
                   size={40}
-                  className="text-black bg-white rounded-full p-1"
+                  className="text-black bg-white rounded-full p-2"
                 />
               </Link>
             </div>
-
-            {/* Copyright Text */}
             <p className="text-gray-400 text-sm mt-10">
               © {new Date().getFullYear()} Ligia Urroz. All rights reserved.
             </p>

@@ -46,7 +46,6 @@ export default function UserFeedback() {
           <Quote size={90} className="text-gray-500" />
         </div>
         <div className="flex items-center justify-center gap-6 md:gap-10">
-          {/* Left Arrow */}
           <button
             onClick={prevFeedback}
             className="p-2 md:p-2 md:mr-10  hover:bg-gray-100 rounded-full transition-colors "
@@ -55,7 +54,6 @@ export default function UserFeedback() {
             <ChevronLeft size={50} className="text-[#9e9e9e]" />
           </button>
 
-          {/* Feedback Content */}
           <div className="w-[80%] md:w-[50%] text-center overflow-hidden relative">
             <p
               className={`text-lg md:text-xl italic transition-opacity duration-500 ${
