@@ -1,17 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const feedbacks = [
-  {
-    text: "Escribe donde sea y como sea; va por ahí apuntando ideas en una libreta para crear maravillosas historias que plasma en sus obras.",
-    user: "NVyNovelas",
-  },
-  {
-    text: "El ensayo (El Color Púrpura, Persépolis y la Vida de Adèle.) de Ligia Urroz hace un recorrido a través de un análisis de obras realizadas por mujeres que lucharon por proyectar su visión del mundo.",
-    user: "Rolling Stone)",
-  },
+  "Great service! Highly recommended.",
+  "Ligia is an amazing professional.",
+  "Excellent work and communication.",
 ];
 
 export default function UserFeedback() {
@@ -42,43 +37,33 @@ export default function UserFeedback() {
   return (
     <section className="py-20 md:py-40 bg-gradient-to-b from-[#D1E2EF] to-white relative">
       <div className="container mx-auto mt-20 md:mt-40 px-4">
-        <div className="flex justify-center mb-10">
-          <Quote size={90} className="text-gray-500" />
-        </div>
-        <div className="flex items-center justify-center gap-6 md:gap-10">
-          {/* Left Arrow */}
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+          User Feedback
+        </h2>
+        <div className="flex items-center justify-center">
           <button
             onClick={prevFeedback}
-            className="p-2 md:p-2 md:mr-10  hover:bg-gray-100 rounded-full transition-colors "
+            className="p-2 md:p-4 hover:bg-gray-200 rounded-full transition-colors"
             aria-label="Previous feedback"
           >
-            <ChevronLeft size={50} className="text-[#9e9e9e]" />
+            <ChevronLeft size={24} />
           </button>
-
-          {/* Feedback Content */}
-          <div className="w-[80%] md:w-[50%] text-center overflow-hidden relative">
+          <div className="w-full md:w-2/3 text-center overflow-hidden h-24 relative">
             <p
-              className={`text-lg md:text-xl italic transition-opacity duration-500 ${
+              className={`text-lg md:text-xl italic absolute w-full transition-opacity duration-500 ${
                 isAnimating ? "opacity-0" : "opacity-100"
               }`}
               aria-live="polite"
             >
-              &quot;{feedbacks[currentIndex].text}&quot;
-            </p>
-            <p
-              className={`text-sm text-gray-600 mt-4 ${
-                isAnimating ? "opacity-0" : "opacity-100"
-              }`}
-            >
-              - {feedbacks[currentIndex].user}
+              &quot;{feedbacks[currentIndex]}&quot;
             </p>
           </div>
           <button
             onClick={nextFeedback}
-            className="p-2 md:p-2 md:ml-10 hover:bg-gray-100 rounded-full transition-colors"
+            className="p-2 md:p-4 hover:bg-gray-200 rounded-full transition-colors"
             aria-label="Next feedback"
           >
-            <ChevronRight size={50} className="text-[#9e9e9e]" />
+            <ChevronRight size={24} />
           </button>
         </div>
       </div>
