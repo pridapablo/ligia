@@ -6,23 +6,33 @@ export default function AboutBox() {
       <div className="flex flex-col md:flex-row h-full">
         <div className="w-full md:w-1/2 h-64 md:h-full relative">
           <Image
-            src="/img2.jpg"
+            src="/women_with_guitar.png"
             alt="Ligia Urroz"
             layout="fill"
             objectFit="cover"
           />
         </div>
-        <div className="w-full md:w-1/2 p-8 overflow-y-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            About Ligia Urroz
+        <div className="w-full md:w-1/2 p-8 overflow-y-auto gap-y-3 mt-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-black">
+            Acerca de
           </h2>
           <p className="text-gray-700 text-sm md:text-base">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar
-            elementum tempus hac tellus libero accumsan. Lorem ipsum dolor sit
-            amet consectetur adipiscing elit semper dalar elementum tempus hac
-            tellus libero accumsan. Lorem ipsum dolor sit amet consectetur
-            adipiscing elit semper dalar tempus hac tellus libero
-            accumsan.elementum tempus hac tellus libero accumsan.
+            Autora y promotora de la lectura. Guitarrista en una banda de rock.
+          </p>
+
+          <h2 className="text-[#A1A1A1] text-sm md:text-base mt-6">
+            NÚMERO DE PUBLICACIONES
+          </h2>
+          <p className="text-black text-sm md:text-base">11+</p>
+
+          <h2 className="text-[#A1A1A1] text-sm md:text-base mt-6">
+            PROYECTOS
+          </h2>
+          <p className="text-black text-sm md:text-base">50+</p>
+
+          <h2 className="text-[#A1A1A1] text-sm md:text-base mt-6">CONTACTO</h2>
+          <p className="text-black text-sm md:text-base">
+            ligia@ligiaurroz.com
           </p>
         </div>
       </div>
